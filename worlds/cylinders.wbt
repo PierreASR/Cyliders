@@ -2,18 +2,19 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.38005799495792547 0.9219430262530449 0.07467915915393505 5.793121001627847
-  position -1.1831294932420438 0.23644606735883264 3.7620787170899828
+  orientation 0.9998695307711316 -0.008874960924341308 -0.013496536744985254 5.680032990055419
+  position 0.0368486388575526 1.9807906602303131 2.845145711200071
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Floor {
-  size 20 20
+  size 2 2
 }
-Solid {
-  translation -0.21999999999999997 0.1 1.1100000000000005
+DEF A1_CYL1 Solid {
+  translation -0.62 0.1 0.62
+  rotation 1 0 0 6.283185307179586
   children [
     Shape {
       appearance DEF RED PBRAppearance {
@@ -35,8 +36,8 @@ Solid {
   physics Physics {
   }
 }
-Solid {
-  translation 0.8 0.125 0
+DEF A2_CYL2 Solid {
+  translation -0.115 0.125 0.14
   children [
     Shape {
       appearance DEF GREEN PBRAppearance {
@@ -55,8 +56,8 @@ Solid {
   physics Physics {
   }
 }
-Solid {
-  translation 0 0.15 0.3400000000000001
+DEF A3_CYL3 Solid {
+  translation 0.38 0.15 -0.37
   children [
     Shape {
       appearance DEF BLUE PBRAppearance {
@@ -75,8 +76,8 @@ Solid {
   physics Physics {
   }
 }
-Solid {
-  translation 0 0.175 0
+DEF CYL4 Solid {
+  translation 0.38 0.175 -0.63
   children [
     Shape {
       appearance USE BLUE
@@ -90,4 +91,73 @@ Solid {
   boundingObject USE G_35CM
   physics Physics {
   }
+}
+DEF C5 Solid {
+  translation -0.115 0.1 0.62
+  children [
+    Shape {
+      appearance USE GREEN
+      geometry USE G_20CM
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE G_20CM
+  physics Physics {
+  }
+}
+DEF C6 Solid {
+  translation -0.62 0.125 0.14
+  children [
+    Shape {
+      appearance USE RED
+      geometry USE G_25CM
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE G_25CM
+  physics Physics {
+  }
+}
+DEF C7 Solid {
+  translation 0 0.125 0
+  children [
+    Shape {
+    }
+  ]
+  name "solid(6)"
+}
+DEF C8 Solid {
+  children [
+    Shape {
+    }
+  ]
+  name "solid(7)"
+}
+DEF C9 Solid {
+  children [
+    Shape {
+    }
+  ]
+  name "solid(8)"
+}
+DEF C10 Solid {
+  children [
+    Shape {
+    }
+  ]
+  name "solid(9)"
+}
+DEF C11 Solid {
+  children [
+    Shape {
+    }
+  ]
+  name "solid(10)"
+}
+DEF C12 Solid {
+  children [
+    Shape {
+    }
+  ]
+  name "solid(11)"
 }

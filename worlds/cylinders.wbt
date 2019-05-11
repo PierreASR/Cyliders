@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.9998695307711316 -0.008874960924341308 -0.013496536744985254 5.680032990055419
-  position 0.0368486388575526 1.9807906602303131 2.845145711200071
+  orientation -0.5889834880654883 0.5650378486833563 0.5777808237917691 2.085858781768904
+  position -0.18283670098715687 3.5637866623656023 0.012607944650812178
 }
 TexturedBackground {
 }
@@ -18,7 +18,7 @@ DEF A1_CYL1 Solid {
   children [
     Shape {
       appearance DEF RED PBRAppearance {
-        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        baseColor 0.8 0 0
         roughness 1
         metalness 0
       }
@@ -77,7 +77,7 @@ DEF A3_CYL3 Solid {
   }
 }
 DEF CYL4 Solid {
-  translation 0.38 0.175 -0.63
+  translation 0.38 0.175 -0.87
   children [
     Shape {
       appearance USE BLUE
@@ -119,45 +119,80 @@ DEF C6 Solid {
   }
 }
 DEF C7 Solid {
-  translation 0 0.125 0
+  translation 0.38 0.125 0.14
   children [
     Shape {
+      appearance USE BLUE
+      geometry USE G_25CM
     }
   ]
   name "solid(6)"
+  boundingObject USE G_25CM
+  physics Physics {
+  }
 }
 DEF C8 Solid {
+  translation 0.38 0.1 0.62
   children [
     Shape {
+      appearance USE BLUE
+      geometry USE G_20CM
     }
   ]
   name "solid(7)"
+  boundingObject USE G_20CM
+  physics Physics {
+  }
 }
 DEF C9 Solid {
+  translation -0.62 0.15 -0.37
   children [
     Shape {
+      appearance USE RED
+      geometry USE G_30CM
     }
   ]
   name "solid(8)"
+  boundingObject USE G_30CM
+  physics Physics {
+  }
 }
 DEF C10 Solid {
+  translation -0.115 0.15 -0.37
   children [
     Shape {
+      appearance USE GREEN
+      geometry USE G_30CM
     }
   ]
   name "solid(9)"
+  boundingObject USE G_30CM
+  physics Physics {
+  }
 }
 DEF C11 Solid {
+  translation -0.62 0.175 -0.87
   children [
     Shape {
+      appearance USE RED
+      geometry USE G_35CM
     }
   ]
   name "solid(10)"
+  boundingObject USE G_35CM
+  physics Physics {
+  }
 }
 DEF C12 Solid {
+  translation -0.115 0.175 -0.87
   children [
     Shape {
+      appearance USE GREEN
+      geometry USE G_35CM
     }
   ]
   name "solid(11)"
+  boundingObject USE G_35CM
+  physics Physics {
+  }
 }

@@ -1,0 +1,93 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.38005799495792547 0.9219430262530449 0.07467915915393505 5.793121001627847
+  position -1.1831294932420438 0.23644606735883264 3.7620787170899828
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 20 20
+}
+Solid {
+  translation -0.21999999999999997 0.1 1.1100000000000005
+  children [
+    Shape {
+      appearance DEF RED PBRAppearance {
+        baseColor 0.9372549019607843 0.1607843137254902 0.1607843137254902
+        roughness 1
+        metalness 0
+      }
+      geometry DEF G_20CM Cylinder {
+        height 0.19999999999999998
+        radius 0.05
+      }
+    }
+  ]
+  boundingObject Shape {
+    appearance PBRAppearance {
+    }
+    geometry USE G_20CM
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.8 0.125 0
+  children [
+    Shape {
+      appearance DEF GREEN PBRAppearance {
+        baseColor 0.45098039215686275 0.8235294117647058 0.08627450980392157
+        roughness 1
+        metalness 0
+      }
+      geometry DEF G_25CM Cylinder {
+        height 0.25
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE G_25CM
+  physics Physics {
+  }
+}
+Solid {
+  translation 0 0.15 0.3400000000000001
+  children [
+    Shape {
+      appearance DEF BLUE PBRAppearance {
+        baseColor 0.20392156862745098 0.396078431372549 0.6431372549019608
+        roughness 1
+        metalness 0
+      }
+      geometry DEF G_30CM Cylinder {
+        height 0.30000000000000004
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE G_30CM
+  physics Physics {
+  }
+}
+Solid {
+  translation 0 0.175 0
+  children [
+    Shape {
+      appearance USE BLUE
+      geometry DEF G_35CM Cylinder {
+        height 0.35
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE G_35CM
+  physics Physics {
+  }
+}
